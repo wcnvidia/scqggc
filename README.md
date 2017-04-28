@@ -1,6 +1,6 @@
 # Angular2 
 
-这是一个用angular2制作的招生网站。[成都艺术职业学院招生网](http://www.cdartprozs.com/)。
+这是一个用angular2制作的招生网站。[四川省轻工工程学校招生网](http://www.cdartprozs.com/)。
 
 # Bootstrap
 
