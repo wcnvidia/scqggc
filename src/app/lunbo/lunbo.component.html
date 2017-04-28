@@ -1,0 +1,75 @@
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<div class="bgh30"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 ">
+            <app-remen></app-remen>
+        </div>
+        <div class="col-md-3 hidden-sm">
+            <app-ad></app-ad>
+        </div>
+    </div>
+</div>
+
+
+<div class="bgh10"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 hidden-xs">
+            <carousel>
+                <slide *ngFor="let test of tests">
+                    <img [src]="test.url" alt="First slide" class="CarouselHeight" >
+                </slide>
+            </carousel>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <tabset>
+                <tab heading="专业动态">
+                    <br/>
+                    <div *ngFor="let collegeNews of collegeNewses">
+                        <span class="glyphicon glyphicon-unchecked"></span> <a class="blackColor" [routerLink]="collegeNews.link">{{collegeNews.title}}</a><br/><br/>
+                    </div>
+                </tab>
+                <tab heading="学院新闻">
+                    <br/>
+                    <div *ngFor="let collegeDynamic of collegeDynamics">
+                        <span class="glyphicon glyphicon-unchecked"></span> <a class="blackColor" [routerLink]="collegeDynamic.link">{{collegeDynamic.title}}</a><br/><br/>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>
+<div class="bgh30"></div>
+
+<div class="container hidden-xs">
+    <div class="row">
+        <div class="col-md-6 col-xs-6 col-sm-6">
+            <h3 class="maincolor">校园生活</h3>
+        </div>
+        <div class="col-md-6 col-xs-6 col-sm-6"> <a class="btn btn-primary floatRight" routerLink="/more">更多</a></div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-3 col-sm-6" *ngFor="let campusLive of campusLives">
+            <img [src]="campusLive.url" class="img-responsive hoverable card" alt="">
+        </div>
+    </div>
+</div>
+<div class="container visible-xs">
+    <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <h3 class="maincolor">校园生活</h3>
+        </div>
+        <div class="col-md-6 col-xs-6"> <a class="btn btn-primary floatRight" routerLink="/more">更多</a></div>
+        <hr/>
+        <div class="row">
+            <img src="http://i4.buimg.com/591259/64a5fe42a48d7107.jpg" class="img-responsive hoverable card" alt="">
+
+        </div>
+    </div>
+</div>
+<div class="bgh20"></div>

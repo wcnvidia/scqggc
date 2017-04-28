@@ -1,0 +1,79 @@
+<div class="container">
+    <h3 class="title"><strong>招生专业及计划</strong></h3>
+    <hr class="hr" />
+    <div class="table-responsive hoverable">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>专业类别</th>
+                    <th>培养方向</th>
+                    <th>限招(中专/大专)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let jihua of jihuas">
+                    <td>{{jihua.leibie}}</td>
+                    <td> <a [routerLink]="jihua.link">{{jihua.pro}}</a></td>
+                    <td>{{jihua.plan}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p><strong>说明：</strong>学制：中专为普通班（3年中职+3年高职），大专为定向班（3年中职+1年大专）。</p>
+    <p>*拟申报专业</p>
+
+    <div class="col-md-12">
+        <h3 class="title">升学途径</h3>
+        <hr class="hr" />
+        <h4>我校与成都大学、四川化工职业技术学院等多所院校建立了紧密的校际合作关系。</h4>
+        <ol>
+            <li>普通班：“3+3”学生均可通过三年中职+三年高职的方式升入高职院校深造，获取全日制大专文凭。</li>
+            <li>定向班：“3+1”学生可通过3年中职+1年大专的方式，通过国家规定的考试获取大专学历文凭。</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3 class="title">资助体系</h3>
+        <hr class="hr" />
+        <div>
+            <div class="table-responsive hoverable">
+                <table class="table table-striped table-hover">
+                    <tbody>
+                        <tr *ngFor="let zizhu of zizhus">
+                            <td>{{zizhu.title}}</td>
+                            <td>{{zizhu.des}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="title">高品质就业</h3>
+        <hr class="hr" />
+        <h4><strong>学校对所有定向委托培养专业（方向）的毕业生均按“对口就业、稳定就业、福利待遇”的要求安排就业.</strong></h4>
+        <p>我校根据企业岗位用人需求，对所学专业学生进行针对性职业规划，并组织进行多元化的定向培养。丰富指导内容，提升指导质量，为学生们推荐稳定性高，福利待遇尽可能好的对口行业单位，实现高质量就业。 </p>
+        <h4><strong>学校实行“就业前有规划、就业中有指导、就业后有跟踪”的就业管理模式。</strong></h4>
+        <p>完善就业指导课程体系，加强就业前指导课程宣讲，建立就业工作保障机制。积极开展毕业生就业指导工作，重点帮助学生在职业生涯设计、就业技巧、就业观、职业道德教育等方面得到提升，全方位、多层次、因人而异地针对学生个人特点开展个性化的就业指导和服务工作。建立毕业生就业质量跟踪调查报告内容，扎实做好就业跟踪服务工作。</p>
+    </div>
+    <div>
+        <h3 class="title">部分对口输送企业</h3>
+        <hr class="hr" />
+        <img src="http://i1.piimg.com/591259/9b03b018350a6426.jpg" alt="" class="card img-responsive hoverable">
+    </div>
+
+</div>
+
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>

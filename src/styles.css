@@ -1,0 +1,333 @@
+/* You can add global styles to this file, and also import other style files */
+
+#container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    #container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    #container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    #container {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    #container {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #container {
+        width: 1140px;
+        max-width: 100%;
+    }
+}
+
+.spinner {
+    margin: 100px auto 0;
+    width: 150px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 165, 150, 0.5);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bouncedelay {
+    0%,
+    80%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    40% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+#bg {
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("http://7xqdjc.com1.z0.glb.clouddn.com/bg.jpg");
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("http://7xqdjc.com1.z0.glb.clouddn.com/bg.jpg");
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("http://7xqdjc.com1.z0.glb.clouddn.com/bg.jpg");
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("http://7xqdjc.com1.z0.glb.clouddn.com/bg.jpg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, cover, cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
+}
+
+#bg:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-image: url("http://7xqdjc.com1.z0.glb.clouddn.com/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+    background-repeat: repeat, no-repeat;
+    background-size: 100px 100px, cover;
+    background-position: top left, center center;
+    -moz-transition: opacity 1.75s ease-out;
+    -webkit-transition: opacity 1.75s ease-out;
+    -ms-transition: opacity 1.75s ease-out;
+    transition: opacity 1.75s ease-out;
+}
+
+#bg.is-loading:after {
+    opacity: 1;
+}
+
+#main {
+    position: relative;
+    max-width: 100%;
+    min-width: 27em;
+    padding: 4.5em 3em 3em 3em;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: default;
+    opacity: 0.95;
+    text-align: center;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -moz-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#wrapper {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    position: relative;
+    min-height: 100%;
+    padding: 1.5em;
+    z-index: 2;
+}
+
+#wrapper>* {
+    z-index: 1;
+}
+
+#wrapper:before {
+    content: '';
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.bq {
+    border-left: 1em solid rgba(255, 165, 150, 0.5);
+    background: #f1f1f1;
+    font-style: italic;
+}
+
+.radius6 {
+    border-radius: 6px;
+}
+
+.choosen {
+    transition: border-bottom .25s;
+    box-shadow: 0;
+}
+
+.choosen:hover {
+    border-bottom: 5px solid #eaeaea;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.choosen:focus {
+    border-bottom: 5px solid #eaeaea;
+}
+
+.hoverable {
+    transition: box-shadow .25s;
+    box-shadow: 0;
+}
+
+.hoverable:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.majorTitle {
+    color: #ffffff;
+    text-shadow: 5px 2px 6px #000;
+    font-size: 48px
+}
+@media screen and (max-width:768px) {
+   .majorTitle {
+    color: #ffffff;
+    text-shadow: 5px 2px 6px #000;
+    font-size: 36px
+}
+}
+
+majorText {
+    line-height: 175%;
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+.bgh30 {
+    background: #ffffff;
+    height: 30px
+}
+
+.bgh10 {
+    background: #ffffff;
+    height: 10px
+}
+
+.bgh20 {
+    background: #ffffff;
+    height: 20px
+}
+
+.bgh65 {
+    background: #ffffff;
+    height: 65px
+}
+.title{
+    text-align: center;
+    color: #e98919;
+}
+.hr {
+    height: 1px;
+    border: none;
+    border-top: 4px solid #e98919;
+}
+.btn-primary {
+    background: #e98919;
+}
+@media screen and (max-width:768px) {
+    .card {
+        width: 80%;
+        margin-left:10%;  
+    }
+}
+@media screen and (max-width:768px) {
+    .carousel {
+        height:200px;  
+    }
+}
+@media screen and (max-width:768px) {
+    .carouselImg {
+        height:200px;  
+    }
+}
+.bgCard {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+

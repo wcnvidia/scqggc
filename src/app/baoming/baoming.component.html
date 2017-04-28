@@ -1,0 +1,122 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <div class="row ">
+        <h3 class="title"><strong>在线报名</strong></h3>
+        <hr class="hr" />
+    </div>
+</div>
+<form class="form-horizontal container" role="form" action="">
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aname">姓名：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aname" type="text" #nameRef placeholder="请输入您的姓名" required/>
+            </div>
+            <label class="col-sm-2 control-label">性别：</label>
+            <div class="col-sm-4">
+                <select class="form-control" #genderRef>
+          <option>男</option>
+          <option>女</option>
+        </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aphone">电话：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aphone" type="tel" #phoneRef placeholder="请输入您的联系电话" required/>
+            </div>
+            <label class="col-sm-2 control-label" for="aqq">Q Q：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aqq" type="tel" #qqRef placeholder="请输入您的联系QQ" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="awechat">微信：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="awechat" #wechatRef type="text" placeholder="请输入您的微信号" />
+            </div>
+            <label class="col-sm-2 control-label">专业：</label>
+            <div class="col-sm-4">
+                <select class="form-control" #proRef>
+          <optgroup label="计算机应用">
+            <option>电子竞技</option>
+            <option>动漫设计</option>
+          </optgroup>
+          <optgroup label="市场营销">
+            <option>房地产营销</option>
+            <option>化妆品营销</option>
+            <option>珠宝营销</option>
+            <option>服装营销</option>
+            <option>汽车营销</option>
+          </optgroup>
+          <optgroup label="文秘">
+            <option>办公室文员</option>
+          </optgroup>
+          <optgroup label="电子商务">
+             <option>电子商务</option>
+          </optgroup>
+          <optgroup label="工程造价">
+            <option>工程造价</option>
+          </optgroup>
+          <optgroup label="机电技术应用">
+            <option>机电技术应用</option>
+          </optgroup>
+          <optgroup label="旅游管理与服务">
+            <option>城市轨道交通服务</option>
+            <option>航空服务</option>
+            <option>酒店管理</option>
+          </optgroup>
+          <optgroup label="会计电算化">
+            <option>金融事务</option>
+            <option>会计</option>
+          </optgroup>
+          <optgroup label="老年人服务与管理">
+            <option>老年人服务</option>
+            <option>营养与保健</option>
+            <option>康复技术</option>
+          </optgroup>
+        </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aschool">毕业学校：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aschool" #schoolRef type="text" placeholder="例:成都市XX中学" required/>
+            </div>
+            <label class="col-sm-2 control-label" for="baddress">通讯地址：</label>
+            <div class="col-sm-4">
+                <input class="form-control" #addressRef id="baddress" type="text" placeholder="例:成都市郫都区菁蓉新城稻香路38号" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aremark">备注：</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="aremark" #remarkRef></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary  btn-lg hoverable" (click)="showMsg();sendFire(nameRef.value,genderRef.value,phoneRef.value,qqRef.value,wechatRef.value,proRef.value,schoolRef.value,addressRef.value,remarkRef.value)">立 即 报 名</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<div class="bgh20"></div>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>

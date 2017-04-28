@@ -1,0 +1,6 @@
+<button type="button" class="btn btn-primary btn-block" (click)="isCollapsed = !isCollapsed">折叠</button>
+<div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed" class="card card-block card-header">
+    <div class="list-group hoverable">
+        <a class="list-group-item" *ngFor="let list of lists" [routerLink]="list.link"><span class="badge btn-primary">{{list.badge}}</span>{{list.name}} </a>
+    </div>
+</div>

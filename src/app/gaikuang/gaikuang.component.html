@@ -1,0 +1,58 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="bgh65"></div>
+            <app-ad></app-ad>
+        </div>
+
+        <div class="col-md-9">
+            <h3 class="title"><strong>学校简介</strong></h3>
+            <hr class="hr" />
+            <p>四川省轻工工程学校是在1958年成立的四川省盐业学校基础上，四川轻工工程学校是于1996年经教育厅批准成立的全日制公办中等职业技术学校，隶属于四川省经济和信息化委员会。四川轻工工程学校是一所以工科为主兼有现代经贸服务类等专业的学校。总校位于自贡市大安区，成都校区位于成都市郫都区菁蓉新城（全球创客小镇），交通方便，有12条城市公交路线，其中两条路线可30分钟到达成都市区。将于2018年通车的有轨电车蓉2号线在学校旁设有站点。学校毗邻电子科技大学清水河校区、四川大学锦城学院。校园环境优美、碧草如茵，周边创客云集，是学技求艺创业的理想园地。</p>
+            <p> 学校教育教学设施齐备，独家拥有民航GDS仿真实训系统和APRS民航客运电子商务软件，建有电子竞技、航空服务等专业实训室。特色鲜明的校企合作办学模式为学生的学习和就业提供了坚实的保障，近三年学生就业率均在98%以上。</p>
+            <p>学校高度重视学生管理，实行全封闭式管理。紧紧围绕“人性化管理、亲情化服务”的育人理念，按照“提高学生素质，构建学生之家”的目标，以“一切为了学生，为了学生一切，为了一切学生”为出发点。以培养学生成为“品德高尚、言行规范、技能精湛、身心健康”的高素质技能型人才为目标，创新办学体制，不断提高教学质量和服务学生质量，为区域经济和行业发展提供强劲的人力资源保障。</p>
+            <h3 class="title"><strong>学校荣誉</strong></h3>
+            <hr class="hr" />
+            <div class="row">
+                <div class="col-md-4" *ngFor="let card of cards">
+                    <div class="card hoverable cardHeight">
+                        <div class="table table-success cardHeight">
+                            <span class="card-description cardHeight">{{card.des}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title"><strong>学校管理</strong></h3>
+            <hr class="hr" />
+            <div class="row">
+                <div class="col-md-6" *ngFor="let manage of manages">
+                    <div class="card hoverable ">
+                        <div class="table table-rose ">
+                            <span class="card-description">{{manage.des}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="bgh20"></div>
+
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>

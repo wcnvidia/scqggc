@@ -1,0 +1,50 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 hidden-sm hidden-xs">
+      <div class="bgh65"></div>
+      <app-ad></app-ad>
+
+    </div>
+    <div class="col-md-9">
+      <h3 class="title"><strong>新闻动态</strong></h3>
+      <hr class="hr" />
+      <div *ngFor="let articleList of articleLists" class="hoverable card">
+        <div class="row ">
+          <div class="col-md-4 col-sm-5">
+            <img [src]="articleList.image" class="img-responsive img">
+          </div>
+          <div class="col-md-8 col-sm-7">
+            <a class="contentTitle"
+               [routerLink]="articleList.link"><strong><br/>{{articleList.title}}</strong></a>
+            <p class="des">{{articleList.des}}</p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="bgh20"></div>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+

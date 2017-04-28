@@ -1,0 +1,39 @@
+.hoverable {
+    transition: box-shadow .25s;
+    box-shadow: 0;
+}
+
+.hoverable:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+    line-height: 175%;
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+h2 {
+    color: #e98919;
+    font-weight: bold
+}
+
+h4 {
+    color: #e98919;
+    font-weight: bold
+}
+
+blockquote {
+    border-left: 1em solid #e98919;
+    background: #f1f1f1;
+    font-style: italic;
+}
+
+ul {
+    line-height: 250%;
+    background: #f1f1f1;
+}
+
+strong {
+    color: #e98919
+}

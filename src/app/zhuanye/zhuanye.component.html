@@ -1,0 +1,44 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="bgh65"></div>
+            <app-ad></app-ad>
+            <app-zhuanye-list></app-zhuanye-list>
+        </div>
+        <div class="col-md-9 ">
+            <h3 class="title"><strong>专业设置</strong></h3>
+            <hr class="hr" />
+            <div class="row">
+                <div class="col-md-4 col-sm-6" *ngFor="let zhuanye of zhuanyes">
+                    <div class="card card-blog hoverable">
+                        <div class="card-image">
+                            <a [routerLink]="zhuanye.link"> <img class="img-responsive center-block" [src]="zhuanye.img"></a>
+                            <div class="ripple-cont"></div>
+                        </div>
+                        <div class="table">
+                            <h6 class="category fontPrimary">{{zhuanye.name}}</h6>
+                            <p class="card-description"> {{zhuanye.des}}</p>
+                            <div class="ftr text-center"> <a [routerLink]="zhuanye.link" class="btn  hoverable btn-primary">更多信息</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgh20"></div>
+
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>

@@ -1,0 +1,17 @@
+.ctrlImgSize {
+    height: 185px;
+    width: 95%;
+}
+.ctrlCaptionSize {
+    height: 225px;
+    width: 100%;
+}
+.fontWhite{
+    color: #ffffff
+}
+.fontPrimary{
+    color: #e98919
+}
+.card-description{
+    height: 175px
+}

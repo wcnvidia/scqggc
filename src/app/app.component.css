@@ -1,0 +1,141 @@
+header {
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+body {
+    font-family: "Microsoft YaHei", 微软雅黑;
+
+}
+
+footer {
+    font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+.navbar-default {
+  background-color: #bd720d;
+  border-color: #b66f0f;
+}
+.navbar-default .navbar-brand {
+  color: #fcfeff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f0efef;
+}
+.navbar-default .navbar-text {
+  color: #fcfeff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fcfeff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f0efef;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #bd720d;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #fcfeff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #f0efef;
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #f0efef;
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f0efef;
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f0efef;
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-toggle {
+  border-color: #b66f0f;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #b66f0f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fcfeff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fcfeff;
+}
+.navbar-default .navbar-link {
+  color: #fcfeff;
+}
+.navbar-default .navbar-link:hover {
+  color: #f0efef;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fcfeff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f0efef;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f0efef;
+    background-color: #b66f0f;
+  }
+}
+
+.bgh10 {
+    background: #e98919;
+    height: 10px
+}
+
+.bgColor {
+    background: #e98919
+}
+
+.margin0 {
+    margin: 0
+}
+
+.fontSize15 {
+    font-size: 15px;
+}
+
+.fontColor {
+    color: white
+}
+
+.btn-nav {
+    background: #336666;
+    padding: 0.25rem 0.5rem;
+ font-size: 0.875rem;
+}
+
+.navbar {
+    min-height: 0
+}
+
+.qrCode {
+    width: 80px;
+    height: 80px;
+}
+
+
+
