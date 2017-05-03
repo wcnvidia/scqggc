@@ -10,7 +10,7 @@ const ArticleLists : DongtaiModel[] = [
   {id:17,link:'/wenzhang/article7',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(3)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a7/a71.jpg'},
   {id:18,link:'/wenzhang/article8',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(4)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a8/a81.jpg'},
   {id:19,link:'/wenzhang/article9',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(5)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a9/a91.jpg'},
-  {id:20,link:'/wenzhang/article10',title:'全国人大代表一行来我院视察指导工作 ——学院隆重举行2017元旦晚会',des:'12月23日，部分全国人大代表和省人大代表来到我院视察指导，学院院长余开源、党委书记、执行院长刁纯志等向代表们汇报了学院近期的工作。',image:'../../assets/img/test235x115.jpg'},
+  {id:20,link:'/wenzhang/article10',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(6)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a10/a01.jpg'},
 ];
 
 @Component({
