@@ -11,6 +11,7 @@ const ArticleLists : DongtaiModel[] = [
   {id:18,link:'/wenzhang/article8',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(4)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a8/a81.jpg'},
   {id:19,link:'/wenzhang/article9',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(5)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a9/a91.jpg'},
   {id:20,link:'/wenzhang/article10',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(6)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a10/a01.jpg'},
+  {id:21,link:'/wenzhang/article11',title:'为什么说现在是汽车销售的春天？来看看这些汽车吧(7)',des:'中国SUV市场的火热气氛，似乎并未有减弱的迹象，而自主品牌SUV依然占据多半江山。车市的火爆给了汽车销售专业广大的前景，选择汽车销售专业没错！',image:'../../assets/img/a11/a05.jpg'},
 ];
 
 @Component({
