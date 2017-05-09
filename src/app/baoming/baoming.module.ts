@@ -5,19 +5,20 @@ import {BaomingRoutingModule} from './baoming.routes';
 import { AngularFireModule } from 'angularfire2';
 
 
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyCR5VHTSfPHDrCpoInopksf1Kka43IPBaE",
-  authDomain: "cdartprozs.firebaseapp.com",
-  databaseURL: "https://cdartprozs.firebaseio.com",
-  storageBucket: "cdartprozs.appspot.com",
-  messagingSenderId: "445818142122"
+  apiKey: "AIzaSyCudvHUzIznvD8qOgE5k3pxPSsTV2lUA_M",
+  authDomain: "scqggc.firebaseapp.com",
+  databaseURL: "https://scqggc.firebaseio.com",
+  storageBucket: "scqggc.appspot.com",
+  messagingSenderId: "650412719688"
 };
 
 
 @NgModule(
   {
     imports:[CommonModule,BaomingRoutingModule, AngularFireModule.initializeApp(firebaseConfig),],
-    declarations:[BaomingComponent],
+    declarations:[BaomingComponent,],
   }
 )
 export class BaomingModule {

@@ -25,6 +25,7 @@ const Lists: List[] = [
   { name: '服装营销', badge: '市场营销', link: '/zhuanye/detail/major17' },
   { name: '珠宝营销', badge: '市场营销', link: '/zhuanye/detail/major18' },
   { name: '化妆品营销', badge: '市场营销', link: '/zhuanye/detail/major19' },
+  { name: '学前教育', badge: '学前教育', link: '/zhuanye/detail/major20' },
 ]
 
 @Component({

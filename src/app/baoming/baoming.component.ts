@@ -12,7 +12,7 @@ export class BaomingComponent implements OnInit {
   item: FirebaseListObservable<any>;
 
   constructor(af: AngularFire) {
-    this.item = af.database.list('/item');
+    this.item = af.database.list('/zhuanye');
   }
 
   showMsg() {

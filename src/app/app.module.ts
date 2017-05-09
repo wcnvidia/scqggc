@@ -9,6 +9,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row ">
+        <h3 class="title"><strong>预约参观</strong></h3>
+        <hr class="hr" />
+    </div>
+</div>
+<form class="form-horizontal container" role="form" action="">
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aname">姓名：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aname" type="text" #nameRef placeholder="请输入您的姓名" required/>
+            </div>
+            <label class="col-sm-2 control-label">是否需要接送：</label>
+            <div class="col-sm-4">
+                <select class="form-control" #genderRef>
+          <option>否</option>
+          <option>是</option>
+        </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aphone">电话：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aphone" type="tel" #phoneRef placeholder="请输入您的联系电话" required/>
+            </div>
+            <label class="col-sm-2 control-label" for="aqq">预约时间：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="aqq" type="tel" #qqRef placeholder="请填写预约时间（例：2017年1月1日）" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="awechat">微信：</label>
+            <div class="col-sm-4">
+                <input class="form-control" id="awechat" #wechatRef type="text" placeholder="请输入您的微信号" />
+            </div>
+            <label class="col-sm-2 control-label" for="baddress">接送地点：</label>
+            <div class="col-sm-4">
+                <input class="form-control" #addressRef id="baddress" type="text" placeholder="如不需要接送则可不必填写" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="aremark">备注：</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="aremark" #remarkRef></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary  btn-lg hoverable" (click)="showMsg();sendFire(nameRef.value,genderRef.value,phoneRef.value,qqRef.value,wechatRef.value,addressRef.value,remarkRef.value)">立 即 预 约 </button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<div class="bgh20"></div>

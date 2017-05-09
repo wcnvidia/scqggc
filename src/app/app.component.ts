@@ -16,8 +16,8 @@ const Footers: Footer[] = [
   {
     title: '联系我们',
     content1: '学校地址：成都市郫都区菁蓉新城稻香路38号',
-    content2: '咨询电话：',
-    content3: '联系QQ',
+    content2: '咨询电话：15008114260（李老师）',
+    content3: '联系QQ：2718796540（李老师）',
     content4: '邮编：611730',
     class: 'col-md-6',
   },

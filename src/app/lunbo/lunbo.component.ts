@@ -33,11 +33,11 @@ const CollegeNewses:CollegeNews[]=[
   {title:"为什么说现在是汽车销售的春天？来看看这些suv吧",link:"/wenzhang/article5"},
 ]
 const CollegeDynamics:CollegeDynamic[]=[
-  {title:"视觉传达学子在省第一届公益广告大赛中再创佳绩",link:""},
-  {title:"2017届毕业生校园系列专场招聘会在青神校区陆续展开",link:""},
-  {title:"管理系举办第一届酒店管理专业技能大赛",link:""},
-  {title:"《立体 裁剪》课程展览",link:""},
-  {title:"我院召开党建、思政和校园文化建设专题工作会",link:""},
+  {title:"专业明星：世界电竞冠军——陈志豪“Hao”",link:""},
+  {title:"专业明星：喜羊羊之父——黄伟明",link:""},
+  {title:"经济管理系“乐途·指尖魔力”点钞大赛",link:""},
+  {title:"四川省轻工工程学校航空服务专业行业认知活动",link:""},
+  {title:"国学经典诵读比赛",link:""},
 ]
 @Component({
   selector: 'app-lunbo',

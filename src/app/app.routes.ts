@@ -39,6 +39,10 @@ export const routes: Routes = [
     path: 'baoming',
     loadChildren: 'app/baoming/baoming.module#BaomingModule'
   },
+   {
+    path: 'yuyue',
+    loadChildren: 'app/yuyue/yuyue.module#YuyueModule'
+  },
   {
     path: 'lianxi',
     loadChildren: 'app/lianxi/lianxi.module#LianxiModule'

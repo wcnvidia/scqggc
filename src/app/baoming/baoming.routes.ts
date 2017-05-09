@@ -10,9 +10,10 @@ const BaomingRoutes : Routes = [
       {
         path:'',
         loadChildren:'app/share/fulunbo/fulunbo.module#FulunboModule',
-      },
+      },    
     ]
   },
+ 
 ];
 const BaomingRouting = RouterModule.forChild(BaomingRoutes)
 @NgModule({
